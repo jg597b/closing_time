@@ -5,7 +5,15 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :description %>
-  </div>
+    <%= f.simple_fields_for :business_hour do |b| %>
+      <% 1.upto(7) do |i| %>
+	    <%= b.input :day, input_html: {value: i }%>
+	    <%= b.input :open_time %>
+	    <%= b.input :close_time %>  
+      <% end %>
+    <% end %>
+    
+ </div>
 
   <div class="form-actions">
     <%= f.button :submit %>

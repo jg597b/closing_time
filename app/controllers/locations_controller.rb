@@ -1,5 +1,4 @@
 class LocationsController < ApplicationController
-
   before_action :set_location, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -11,6 +10,7 @@ class LocationsController < ApplicationController
 
   def new
     @location = Location.new
+    @location.business_hours.build
   end
 
   def edit
@@ -40,7 +40,7 @@ class LocationsController < ApplicationController
     end
 
     def location_params
-      params.require(:location).permit(:name, :description)
+      params.require(:location).permit(:name, :description, :day, :open_time, :close_time)
     end
 
 end
