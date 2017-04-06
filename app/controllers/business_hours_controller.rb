@@ -1,5 +1,7 @@
 class BusinessHoursController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_business_hour, only: [:show, :edit, :update, :destroy]
+
   def index
     @business_hours = BusinessHour.all
   end

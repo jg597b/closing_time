@@ -46,6 +46,6 @@ group :development do
  #Gems I used the most
   gem 'rspec-rails'
   gem 'simple_form'
-
+  gem 'devise'
 end
 
