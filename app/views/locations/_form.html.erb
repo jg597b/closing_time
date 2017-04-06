@@ -6,6 +6,7 @@
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.simple_fields_for :business_hour do |b| %>
+    <!--quick loop for display day number -->
       <% 1.upto(7) do |i| %>
 	    <%= b.input :day, input_html: {value: i }%>
 	    <%= b.input :open_time %>
