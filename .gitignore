@@ -22,3 +22,4 @@ Gemfile.lock
 /tmp/*
 #precompile assets
 /spec/internal/public/assets
+.idea

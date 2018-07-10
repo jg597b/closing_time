@@ -1,28 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create a Ruby on Rails App to manage open and close times for different locations. The app
+should have:
+* Users CRUD
+* Locations CRUD with open and close time for each day of the week
+* User login
+* API RestFull to check if a location is open or close
+Besides, create a HTML page that shows some content if a location is open or not
+Everything else is up to you
+We’ll evaluate, among other things:
+* Clean and readable code
+* Gems used
+* Comment code
+* Tests
+* User interface
+* Time management
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You have a maximum of 3 hours to do this.
+To review we need you to upload your code to a github repository.
+Have fun :)
